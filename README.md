@@ -10,8 +10,6 @@ A Python script to scrape episode scripts from the TV show "The Middle" from sub
 
 - Scrapes all available episode scripts from "The Middle"
 - Organizes scripts by season and episode
-- Handles network errors gracefully
-- Includes rate limiting to avoid server overload
 - Saves scripts with metadata (title and source URL)
 
 ## Requirements
@@ -89,7 +87,6 @@ Each script file contains:
 - The script includes a 1-second delay between requests to avoid overwhelming the server
 - Some episodes might be missing due to unavailability on the source website
 - The script uses a user agent header to mimic a web browser
-- Network errors are handled gracefully with appropriate error messages
 
 ## Limitations
 
