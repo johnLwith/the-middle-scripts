@@ -2,6 +2,9 @@
 
 A collection of Python scrapers to extract episode scripts from the TV show "The Middle" from multiple sources.
 
+## Differences
+[diff.md](diff.md)
+
 ## 🎯 Available Scrapers
 
 ### 1. Springfield Springfield Scraper ✅ **COMPLETE**
