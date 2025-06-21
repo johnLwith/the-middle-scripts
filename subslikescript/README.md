@@ -108,7 +108,3 @@ Feel free to submit issues and enhancement requests!
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
----
-Powered by vscode plugins:
-- [CodeBuddy] from Tencent
-- [Trae] from DanceByte
