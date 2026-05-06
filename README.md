@@ -26,6 +26,16 @@ A collection of Python scrapers to extract episode scripts from the TV show "The
 - ✅ Basic analysis tools
 - ✅ Established and tested
 
+### 3. My-Subs Subtitle Scraper ✅ **COMPLETE**
+**Location**: `my-subs/`
+**Source**: [my-subs.co](https://my-subs.co/showlistsubtitles-1702-the-middle)
+
+- ✅ **214 episodes** across 9 seasons
+- ✅ English subtitles only
+- ✅ SRT to TXT conversion
+- ✅ Organized by season folders
+- ✅ **SXXEXX.txt** naming format
+
 ## 🚀 Quick Start
 
 ### Springfield Springfield (Recommended)
@@ -47,28 +57,39 @@ python3 scrape_the_middle.py
 python3 analyze_scripts.py
 ```
 
+### My-Subs (English Subtitles)
+```bash
+cd my-subs/
+python3 -m venv venv
+source venv/bin/activate
+pip install requests beautifulsoup4
+python3 scrape.py                     # Download SRT files
+python3 organize.py                   # Convert to TXT format
+```
+Output: `my-subs/my_subtitles/Season_X/SXXEXX.txt`
+
 ## 📊 Comparison
 
-| Feature | Springfield Springfield | Subslikescript |
-|---------|------------------------|----------------|
-| **Status** | ✅ Complete | ✅ Complete |
-| **Episodes** | 214 (all 9 seasons) | ~190 (missing Season 6) |
-| **Test Mode** | ✅ Available | ❌ Not available |
-| **Analysis** | ✅ Advanced | ✅ Basic |
-| **Visualizations** | ✅ Comprehensive | ✅ Standard |
-| **Success Rate** | 100% | ~95% |
+| Feature | Springfield Springfield | Subslikescript | My-Subs |
+|---------|------------------------|----------------|---------|
+| **Status** | ✅ Complete | ✅ Complete | ✅ Complete |
+| **Episodes** | 214 (all 9 seasons) | ~190 (missing Season 6) | 214 (all 9 seasons) |
+| **Content** | Scripts/Transcripts | Scripts/Transcripts | English Subtitles |
+| **Test Mode** | ✅ Available | ❌ Not available | ❌ Not available |
+| **Analysis** | ✅ Advanced | ✅ Basic | ❌ None |
+| **Visualizations** | ✅ Comprehensive | ✅ Standard | ❌ None |
+| **Success Rate** | 100% | ~95% | 100% |
 
 ## 📁 Output Structure
 
-Both scrapers create organized directory structures:
+Scrapers create organized directory structures:
 
+### Springfield Springfield & Subslikescript
 ```
 {scraper}_scripts/
 ├── Season_1/
 │   ├── 01_Episode_Title.txt
 │   ├── 02_Episode_Title.txt
-│   └── ...
-├── Season_2/
 │   └── ...
 └── Season_9/
     └── ...
@@ -79,6 +100,22 @@ Each script file contains:
 - Source URL
 - Complete episode transcript
 - Character dialogue and stage directions
+
+### My-Subs
+```
+my-subs/my_subtitles/
+├── Season_1/
+│   ├── S01E01.txt
+│   ├── S01E02.txt
+│   └── ...
+└── Season_9/
+    └── ...
+```
+
+Each subtitle file contains:
+- Title and source metadata
+- Cleaned dialogue text (timestamps removed)
+- English subtitles only
 
 ## 🔧 Requirements
 

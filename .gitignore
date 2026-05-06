@@ -1,1 +1,3 @@
 .venv
+my-subs/*.srt
+.DS_Store
