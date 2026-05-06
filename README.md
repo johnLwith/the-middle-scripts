@@ -173,5 +173,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Augment] - sprintfieldspringfield
 - [CodeBuddy] - subslikescript
 - [Trae] - subslikescript
+- [ClaudeCode+MimoV2.5] - my-subs
 
 
